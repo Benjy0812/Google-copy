@@ -1,26 +1,27 @@
 /* Main Container */
 .main {
-  margin-top: 100px;
+  margin-top: 100px; /*makes space between the logo and the search bar*/
 } /* End of Main Container */
 
-/* Logo Styling */
+/* Google Logo css */
 .logo-img {
   display: block;
-  width: 300px;
+  width: 300px; /* width of Google logo */
 
   margin-left: auto;
   margin-right: auto;
 } /* End of Logo Styling */
 
+/*Start of Search Input css*/
 /* Search Input Styles */
 .search-input {
   display: block;
-  width: 400px;
-  line-height: 24px;
+  width: 400px; /* width of Search Input */
+  line-height: 24px; /* height of Search Input */
 
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 20px;
+  margin-left: auto; /* Helps with the centering */
+  margin-right: auto; /* Helps with the centering */
+  margin-top: 20px; /* Adds space between the Google Logo and Search Input */
 
   padding-top: 10px;
   padding-bottom: 10px;
@@ -29,15 +30,17 @@
 
   border: 1px solid #dfe1e5;
   border-radius: 24px;
-} /* End of Search Input Styles */
+} /* End of Search Input css */
 
 /* Remove outline on focus for Search Input */
 .search-input:focus {
   outline: none;
 } /* End of Search Input Focus */
+/* End of Search Input css */
 
+/*start of buttons styling */
 /* Button Wrapper - Centers Buttons */
-.btn-wrapper {
+.btn-container {
   display: flex;
   justify-content: center;
 } /* End of Button Wrapper */
@@ -58,9 +61,12 @@
 
   border: none;
   border-radius: 4px;
-} /* End of Button Styles */
+} /* End of Button css */
 
 /* Pointer Cursor on Button Hover */
 .btn:hover {
   cursor: pointer;
 } /* End of Button Hover */
+/*End of buttons css */
+
+
