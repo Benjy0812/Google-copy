@@ -1,0 +1,1 @@
+This project was made as a part of the HTML and CSS course on scrimba.com i had fun making it and i can recomend it to anyone who wants to learn HTML and CSS and they have a java script course.
