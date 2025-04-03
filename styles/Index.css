@@ -1,72 +1,64 @@
 /* Main Container */
 .main {
-  margin-top: 100px; /*makes space between the logo and the search bar*/
+  margin-top: 100px; /* Makes space between the logo and the search bar */
 } /* End of Main Container */
 
-/* Google Logo css */
+/* Google Logo CSS */
 .logo-img {
   display: block;
-  width: 300px; /* width of Google logo */
-
+  width: 300px; /* Width of Google logo */
   margin-left: auto;
   margin-right: auto;
 } /* End of Logo Styling */
 
-/*Start of Search Input css*/
-/* Search Input Styles */
+/* Search Input CSS */
 .search-input {
   display: block;
-  width: 400px; /* width of Search Input */
-  line-height: 24px; /* height of Search Input */
-
-  margin-left: auto; /* Helps with the centering */
-  margin-right: auto; /* Helps with the centering */
+  width: 400px; /* Width of Search Input */
+  line-height: 24px; /* Height of Search Input */
+  margin-left: auto; /* Helps with centering */
+  margin-right: auto; /* Helps with centering */
   margin-top: 20px; /* Adds space between the Google Logo and Search Input */
-
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 30px;
   padding-right: 30px;
-
   border: 1px solid #dfe1e5;
   border-radius: 24px;
-} /* End of Search Input css */
+} /* End of Search Input CSS */
 
 /* Remove outline on focus for Search Input */
 .search-input:focus {
   outline: none;
+  box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.2);
 } /* End of Search Input Focus */
-/* End of Search Input css */
 
-/*start of buttons styling */
-/* Button Wrapper - Centers Buttons */
+/* Search Input Hover Effect */
+.search-input:hover {
+  box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.2);
+} /* End of Search Input Hover Effect */
+
+/* Buttons Styling */
 .btn-container {
   display: flex;
   justify-content: center;
 } /* End of Button Wrapper */
 
-/* Button Styles */
 .btn {
   background: #dfe1e5;
   font-size: 14px;
-
   margin-top: 20px;
   margin-left: 10px;
   margin-right: 10px;
-
   padding-left: 16px;
   padding-right: 16px;
   padding-top: 8px;
   padding-bottom: 8px;
-
   border: none;
   border-radius: 4px;
-} /* End of Button css */
+} /* End of Button CSS */
 
-/* Pointer Cursor on Button Hover */
 .btn:hover {
   cursor: pointer;
+  box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.2);
 } /* End of Button Hover */
-/*End of buttons css */
-
-
