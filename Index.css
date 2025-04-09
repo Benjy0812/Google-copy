@@ -5,60 +5,61 @@
 
 /* Google Logo CSS */
 .logo-img {
-  display: block;
+  display: block; /* Ensures the logo is treated as a block element */
   width: 300px; /* Width of Google logo */
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: auto; /* Centers the logo horizontally */
+  margin-right: auto; /* Centers the logo horizontally */
 } /* End of Logo Styling */
 
 /* Search Input CSS */
 .search-input {
-  display: block;
+  display: block; /* Ensures the input is treated as a block element */
   width: 400px; /* Width of Search Input */
   line-height: 24px; /* Height of Search Input */
-  margin-left: auto; /* Helps with centering */
-  margin-right: auto; /* Helps with centering */
+  margin-left: auto; /* Centers the input horizontally */
+  margin-right: auto; /* Centers the input horizontally */
   margin-top: 20px; /* Adds space between the Google Logo and Search Input */
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 30px;
-  padding-right: 30px;
-  border: 1px solid #dfe1e5;
-  border-radius: 24px;
+  padding-top: 10px; /* Adds vertical padding inside the Search Input */
+  padding-bottom: 10px; /* Adds vertical padding inside the Search Input */
+  padding-left: 30px; /* Adds horizontal padding inside the Search Input */
+  padding-right: 30px; /* Adds horizontal padding inside the Search Input */
+  border: 1px solid #dfe1e5; /* Adds a light border around the input */
+  border-radius: 24px; /* Rounds the corners of the input */
 } /* End of Search Input CSS */
 
 /* Remove outline on focus for Search Input */
 .search-input:focus {
-  outline: none;
-  box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.2);
+  outline: none; /* Removes the default focus outline */
+  box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow on focus */
 } /* End of Search Input Focus */
 
 /* Search Input Hover Effect */
 .search-input:hover {
-  box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow on hover */
 } /* End of Search Input Hover Effect */
 
 /* Buttons Styling */
 .btn-container {
-  display: flex;
-  justify-content: center;
+  display: flex; /* Aligns buttons in a row */
+  justify-content: center; /* Centers the buttons horizontally */
 } /* End of Button Wrapper */
 
 .btn {
-  background: #dfe1e5;
-  font-size: 14px;
-  margin-top: 20px;
-  margin-left: 10px;
-  margin-right: 10px;
-  padding-left: 16px;
-  padding-right: 16px;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  border: none;
-  border-radius: 4px;
+  background: #dfe1e5; /* Sets the background color of the button */
+  font-size: 14px; /* Sets the font size of the button text */
+  margin-top: 20px; /* Adds space above the button */
+  margin-left: 10px; /* Adds space between buttons */
+  margin-right: 10px; /* Adds space between buttons */
+  padding-left: 16px; /* Adds horizontal padding inside the button */
+  padding-right: 16px; /* Adds horizontal padding inside the button */
+  padding-top: 8px; /* Adds vertical padding inside the button */
+  padding-bottom: 8px; /* Adds vertical padding inside the button */
+  border: none; /* Removes the default border */
+  border-radius: 4px; /* Rounds the corners of the button */
 } /* End of Button CSS */
 
+/* Button Hover Effect */
 .btn:hover {
-  cursor: pointer;
-  box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.2);
+  cursor: pointer; /* Changes the cursor to a pointer on hover */
+  box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow on hover */
 } /* End of Button Hover */
