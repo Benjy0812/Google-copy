@@ -14,7 +14,7 @@
 /* Search Input CSS */
 .search-input {
   display: block; /* Ensures the input is treated as a block element */
-  width: 400px; /* Width of Search Input */
+  width: 500px; /* Width of Search Input */
   line-height: 24px; /* Height of Search Input */
   margin-left: auto; /* Centers the input horizontally */
   margin-right: auto; /* Centers the input horizontally */
@@ -63,3 +63,8 @@
   cursor: pointer; /* Changes the cursor to a pointer on hover */
   box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow on hover */
 } /* End of Button Hover */
+
+/* Logo Hover Effect */
+.logo-img:hover {
+  cursor: pointer; /* Changes the cursor to a pointer on hover */
+} /* End of Logo Hover */
