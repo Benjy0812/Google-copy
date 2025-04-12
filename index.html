@@ -1,27 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Google</title>
-    <link rel="icon" href="favicon.ico" />
-    <link rel="stylesheet" href="Index.css" />
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="Index.css">
   </head>
 
   <body>
+    <!-- all Components -->
     <main class="main">
       <!-- Search Components -->
       <div class="search-container">
-        <img class="logo-img" src="google.png" alt="Google Logo" />
-        <input class="search-input" type="text" />
+        <img class="logo-img" src="google.png" alt="Google HomePageLogo">
+        <input
+          class="search-input"
+          type="text"
+          placeholder="Search Google or type a URL">
       </div>
 
       <!-- Button Components -->
       <div class="btn-container">
-        <button class="btn">Google Search</button>
-        <button class="btn" id="lucky">I'm Feeling Lucky</button>
+        <button class="btn" aria-label="Search Google">Google Search</button>
+        <button class="btn" aria-label="I'm Feeling Lucky" id="lucky">
+          I'm Feeling Lucky
+        </button>
       </div>
     </main>
+    <footer>
+      <p>Google Clone - Created by [Benjy]</p>
+    </footer>
     <script src="index.js"></script>
   </body>
 </html>
