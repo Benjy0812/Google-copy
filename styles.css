@@ -28,7 +28,6 @@ html, body {
   border: 1px solid #dfe1e5;
   border-radius: 24px;
 }
-
 .search-input:focus,
 .search-input:hover {
   outline: none;
@@ -48,7 +47,6 @@ html, body {
   border: none;
   border-radius: 4px;
 }
-
 .btn:hover {
   cursor: pointer;
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
@@ -61,4 +59,7 @@ html, body {
   text-align: center;
   padding: 10px;
   background-color: #f1f1f1;
+}
+.footer .github {
+  text-decoration: none;
 }
