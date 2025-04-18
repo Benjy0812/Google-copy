@@ -9,11 +9,12 @@
   --search-input-box-shadow: rgba(0, 0, 0, 0.2);
   --search-input-border-color: rgb(223, 225, 229);
   --search-input-placeholder-color: rgb(0, 0, 0);
+  --theme-btn-background-color: rgb(255, 255, 255);
 }
 
 /* Dark Mode */
 .dark-mode {
-  --background-main-color: rgb(0, 0, 0);
+  --background-main-color: rgb(50, 50, 50);
   --background-alternative-color: rgb(30, 30, 30);
   --text-color: rgb(255, 255, 255);
   --btn-background-color: rgb(50, 50, 50);
@@ -22,6 +23,7 @@
   --search-input-box-shadow: rgba(255, 255, 255, 0.25);
   --search-input-border-color: rgb(50, 50, 50);
   --search-input-placeholder-color: rgb(255, 255, 255);
+  --theme-btn-background-color: rgb(50, 50, 50);
 }
 
 /* Global Styles */
@@ -110,8 +112,7 @@ body {
   margin-top: 0px;
 }
 .theme-btn {
-  background-color: var(--btn-background-color);
-  color: var(--text-color);
+  background-color: var(--theme-btn-background-color);
   font-size: 14px;
   margin: 20px 10px 0;
   padding: 8px 16px;
@@ -121,7 +122,6 @@ body {
 }
 .theme-btn:hover {
   cursor: pointer;
-  box-shadow: 1px 1px 5px var(--btn-box-shadow);
   transform: scale(1.05);
   transition: transform 0.2s ease-in;
 }
