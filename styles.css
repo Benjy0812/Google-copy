@@ -155,3 +155,16 @@ body {
     width: 200px;
   }
 }
+
+@keyframes slideintop {
+  from {
+    transform: translateY(-300%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+.slideintop {
+  animation: slideintop 1s ease;
+}
