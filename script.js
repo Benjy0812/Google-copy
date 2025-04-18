@@ -3,17 +3,13 @@ document.getElementById("lucky").addEventListener("click", function () {
 });
 
 const themeToggle = document.getElementById("theme-toggle");
-const themeImg = document.getElementById("themeImg")
+const themeImg = document.getElementById("themeImg");
 const body = document.body;
+
+const sunIcon = "sun.png";
+const moonIcon = "moon.png";
 
 themeToggle.addEventListener("click", () => {
   body.classList.toggle("dark-mode");
+  themeImg.src = body.classList.contains("dark-mode") ? moonIcon : sunIcon;
 });
-
-themeToggle.addEventListener("click", () => {
-  if (body.classList.contains("dark-mode")) {
-    themeImg.src = "moon.png";
-  } else {
-    themeImg.src = "sun.png";
-  }
-})
