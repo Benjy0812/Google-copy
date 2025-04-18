@@ -9,7 +9,6 @@
   --search-input-box-shadow: rgba(0, 0, 0, 0.2);
   --search-input-border-color: rgb(223, 225, 229);
   --search-input-placeholder-color: rgb(0, 0, 0);
-  --theme-btn-background-color: rgb(255, 255, 255);
 }
 
 /* Dark Mode */
@@ -23,7 +22,6 @@
   --search-input-box-shadow: rgba(255, 255, 255, 0.25);
   --search-input-border-color: rgb(30, 30, 30);
   --search-input-placeholder-color: rgb(255, 255, 255);
-  --theme-btn-background-color: rgb(25, 25, 25);
 }
 
 /* Global Styles */
@@ -37,7 +35,7 @@ body {
   font-weight: 300;
   background-color: var(--background-main-color);
   color: var(--text-color);
-  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  transition: all 0.3s;
 }
 
 /* Layout */
@@ -116,7 +114,7 @@ body {
 }
 
 .theme-btn {
-  background-color: var(--theme-btn-background-color);
+  background-color: transparent;
   font-size: 14px;
   margin: 20px 10px 0;
   padding: 8px 16px;
