@@ -17,10 +17,10 @@
   --background-alternative-color: rgb(30, 30, 30);
   --text-color: rgb(255, 255, 255);
   --btn-background-color: rgb(30, 30, 30);
-  --btn-box-shadow: rgba(255, 255, 255, 0.25);
-  --search-input-background-color: rgb(30, 30, 30);
-  --search-input-box-shadow: rgba(255, 255, 255, 0.25);
-  --search-input-border-color: rgb(30, 30, 30);
+  --btn-box-shadow: rgb(192, 192, 192);
+  --search-input-background-color: rgb(25, 25, 25);
+  --search-input-box-shadow: rgb(192, 192, 192);;
+  --search-input-border-color: rgb(40, 40, 40);
   --search-input-placeholder-color: rgb(255, 255, 255);
 }
 
@@ -35,7 +35,7 @@ body {
   font-weight: 300;
   background-color: var(--background-main-color);
   color: var(--text-color);
-  transition: all 0.3s;
+  transition: all 0.5s;
 }
 
 /* Layout */
@@ -149,10 +149,57 @@ body {
 @media (max-width: 768px) {
   .search-input {
     width: 90%;
+    font-size: 16px; /* Adjust font size for smaller screens */
   }
 
   .logo-img {
-    width: 200px;
+    width: 150px; /* Smaller logo for phones */
+  }
+
+  .btn-container {
+    flex-direction: column; /* Stack buttons vertically */
+    align-items: center;
+  }
+
+  .btn {
+    width: 80%; /* Make buttons wider */
+    margin: 10px 0; /* Add spacing between buttons */
+    font-size: 16px; /* Adjust font size */
+  }
+
+  .footer {
+    padding: 20px;
+    font-size: 14px; /* Smaller text for footer */
+  }
+
+  .theme-container {
+    top: 5px;
+    right: 5px;
+  }
+
+  .theme-btn {
+    padding: 5px 10px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .search-input {
+    width: 95%; /* Use almost full width */
+    font-size: 14px;
+  }
+
+  .logo-img {
+    width: 120px; /* Even smaller logo */
+  }
+
+  .btn {
+    width: 90%; /* Buttons take up more width */
+    font-size: 14px;
+  }
+
+  .footer {
+    font-size: 12px; /* Smaller footer text */
   }
 }
 
