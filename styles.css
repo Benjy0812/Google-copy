@@ -19,7 +19,7 @@
   --btn-background-color: rgb(30, 30, 30);
   --btn-box-shadow: rgb(192, 192, 192);
   --search-input-background-color: rgb(25, 25, 25);
-  --search-input-box-shadow: rgb(192, 192, 192);;
+  --search-input-box-shadow: rgb(192, 192, 192);
   --search-input-border-color: rgb(40, 40, 40);
   --search-input-placeholder-color: rgb(255, 255, 255);
 }
@@ -90,6 +90,7 @@ body {
   border: none;
   border-radius: 4px;
   transition: transform 0.2s ease-out;
+  text-decoration: none;
 }
 
 .btn:hover {
@@ -135,71 +136,50 @@ body {
 
 .footer {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  text-align: center;
-  padding: 10px;
-  background-color: var(--background-alternative-color);
+  justify-content: center;
+  flex-direction: column;
+}
+
+.footer-text {
+  font-size: 14px;
+  line-height: 15px;
 }
 
 .github {
   text-decoration: none;
 }
 
-@media (max-width: 768px) {
-  .search-input {
-    width: 90%;
-    font-size: 16px; /* Adjust font size for smaller screens */
-  }
-
+@media (max-width: 320px) {
   .logo-img {
-    width: 150px; /* Smaller logo for phones */
+    width: 200px;
   }
-
-  .btn-container {
-    flex-direction: column; /* Stack buttons vertically */
-    align-items: center;
+  .search-input {
+    width: 60%;
   }
-
-  .btn {
-    width: 80%; /* Make buttons wider */
-    margin: 10px 0; /* Add spacing between buttons */
-    font-size: 16px; /* Adjust font size */
-  }
-
-  .footer {
-    padding: 20px;
-    font-size: 14px; /* Smaller text for footer */
-  }
-
-  .theme-container {
-    top: 5px;
-    right: 5px;
-  }
-
-  .theme-btn {
-    padding: 5px 10px;
+  .footer-text {
     font-size: 12px;
   }
 }
 
-@media (max-width: 480px) {
-  .search-input {
-    width: 95%; /* Use almost full width */
-    font-size: 14px;
-  }
-
+@media (max-width: 768px) {
   .logo-img {
-    width: 120px; /* Even smaller logo */
+    width: 250px;
   }
-
-  .btn {
-    width: 90%; /* Buttons take up more width */
-    font-size: 14px;
+  .search-input {
+    width: 80%;
   }
+}
 
-  .footer {
-    font-size: 12px; /* Smaller footer text */
+@media (max-width: 560px) {
+  .logo-img {
+    width: 250px;
+  }
+  .search-input {
+    width: 60%;
+  }
+  .footer-text {
+    font-size: 12px;
   }
 }
 
@@ -213,5 +193,5 @@ body {
 }
 
 .slideintop {
-  animation: slideintop 1s ease;
+  animation: slideintop 1s ease-out;
 }
