@@ -1,7 +1,3 @@
-document.getElementById("lucky").addEventListener("click", function () {
-  window.open("https://en.wikipedia.org/wiki/Special:Random", "_blank");
-});
-
 const themeToggle = document.getElementById("theme-toggle");
 const themeImg = document.getElementById("themeImg");
 const body = document.body;
