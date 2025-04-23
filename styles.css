@@ -147,17 +147,18 @@ body {
   text-decoration: none;
 }
 
-@media (max-width: 450px) { /* Targeting devices around your resolution width */
+@media (max-width: 450px) {
+  /* Targeting devices around your resolution width */
   .main {
-      margin-top: 20px; /* Reduce top margin on mobile */
-      padding: 20px; /* Add some padding around the content */
-      align-items: stretch; /* Make items take full width */
+    margin-top: 20px; /* Reduce top margin on mobile */
+    padding: 20px; /* Add some padding around the content */
+    align-items: stretch; /* Make items take full width */
   }
 
   .logo-img {
-      max-width: 100%; /* Logo takes full width */
-      width: auto; /* Override the fixed width */
-      height: auto; /* Maintain aspect ratio */
+    max-width: 100%; /* Logo takes full width */
+    width: auto; /* Override the fixed width */
+    height: auto; /* Maintain aspect ratio */
   }
 
   .search-input {
@@ -170,13 +171,13 @@ body {
   }
 
   .btn-container {
-      flex-direction: column; /* Stack buttons on mobile */
-      align-items: stretch; /* Make buttons take full width */
-      text-align: center; /* Center align text */
+    flex-direction: column; /* Stack buttons on mobile */
+    align-items: stretch; /* Make buttons take full width */
+    text-align: center; /* Center align text */
   }
 
   .btn {
-      margin: 10px 0; /* Adjust button margin for stacking */
+    margin: 10px 0; /* Adjust button margin for stacking */
   }
 }
 
@@ -203,10 +204,10 @@ body {
 
 @keyframes slideintop {
   from {
-      transform: translateY(-300%);
+    transform: translateY(-300%);
   }
   to {
-      transform: translateY(0);
+    transform: translateY(0);
   }
 }
 
