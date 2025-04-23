@@ -94,7 +94,6 @@ body {
 }
 
 .btn:hover {
-  cursor: pointer;
   box-shadow: 1px 1px 5px var(--btn-box-shadow);
   transform: scale(1.05);
   transition: transform 0.2s ease-in;
@@ -109,22 +108,19 @@ body {
   display: flex;
   justify-content: flex-end;
   position: absolute;
-  top: 10px;
-  right: 10px;
-  margin-top: 0px;
+  top: 0px;
+  right: 0px;
 }
 
 .theme-btn {
   background-color: transparent;
   font-size: 14px;
-  margin: 20px 10px 0;
-  padding: 8px 16px;
+  margin: 10px;
   border: none;
   border-radius: 4px;
 }
 
 .theme-btn:hover {
-  cursor: pointer;
   transform: scale(1.05);
   transition: transform 0.2s ease-in;
 }
@@ -151,48 +147,73 @@ body {
   text-decoration: none;
 }
 
-@media (max-width: 320px) {
+@media (max-width: 450px) { /* Targeting devices around your resolution width */
+  .main {
+      margin-top: 20px; /* Reduce top margin on mobile */
+      padding: 20px; /* Add some padding around the content */
+      align-items: stretch; /* Make items take full width */
+  }
+
   .logo-img {
-    width: 200px;
+      max-width: 100%; /* Logo takes full width */
+      width: auto; /* Override the fixed width */
+      height: auto; /* Maintain aspect ratio */
   }
+
   .search-input {
-    width: 60%;
+    width: 90%; /* Search input takes full width */
+    padding: 10px; /* Adjust padding for mobile */
+    margin: 20px auto; /* Center align on mobile */
+    flex-direction: column; /* Stack buttons on mobile */
+    align-items: stretch; /* Make buttons take full width */
+    text-align: center; /* Center align text */
   }
-  .footer-text {
-    font-size: 12px;
+
+  .btn-container {
+      flex-direction: column; /* Stack buttons on mobile */
+      align-items: stretch; /* Make buttons take full width */
+      text-align: center; /* Center align text */
+  }
+
+  .btn {
+      margin: 10px 0; /* Adjust button margin for stacking */
   }
 }
 
-@media (max-width: 768px) {
-  .logo-img {
-    width: 250px;
+@media (max-width: 589px) {
+  .main {
+    margin-top: 20px; /* Reduce top margin on mobile */
+    padding: 20px; /* Add some padding around the content */
+    align-items: stretch; /* Make items take full width */
   }
   .search-input {
-    width: 80%;
+    width: 90%; /* Search input takes full width */
+    padding: 10px; /* Adjust padding for mobile */
+    margin: 20px auto; /* Center align on mobile */
+    flex-direction: column; /* Stack buttons on mobile */
+    align-items: stretch; /* Make buttons take full width */
+    text-align: center; /* Center align text */
   }
-}
-
-@media (max-width: 560px) {
   .logo-img {
-    width: 250px;
-  }
-  .search-input {
-    width: 60%;
-  }
-  .footer-text {
-    font-size: 12px;
+    max-width: 70%; /* Logo takes full width */
+    width: auto; /* Override the fixed width */
+    height: auto; /* Maintain aspect ratio */
   }
 }
 
 @keyframes slideintop {
   from {
-    transform: translateY(-300%);
+      transform: translateY(-300%);
   }
   to {
-    transform: translateY(0);
+      transform: translateY(0);
   }
 }
 
 .slideintop {
   animation: slideintop 1s ease-out;
+}
+
+.pointer {
+  cursor: pointer;
 }
